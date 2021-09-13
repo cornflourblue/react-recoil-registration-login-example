@@ -4,7 +4,6 @@ import { history } from '_helpers';
 import { authAtom } from '_state';
 import { useAlertActions } from '_actions';
 
-
 export { useFetchWrapper };
 
 function useFetchWrapper() {

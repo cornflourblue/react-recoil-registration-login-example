@@ -8,6 +8,8 @@ import { useRecoilValue } from 'recoil';
 import { userAtom } from '_state';
 import { useUserActions, useAlertActions } from '_actions';
 
+export { AddEdit };
+
 function AddEdit({ history, match }) {
     const { id } = match.params;
     const mode = { add: !id, edit: !!id };
@@ -128,5 +130,3 @@ function AddEdit({ history, match }) {
         </>
     );
 }
-
-export { AddEdit };

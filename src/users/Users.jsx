@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 
 import { List, AddEdit } from './';
 
+export { Users };
+
 function Users({ match }) {
     const { path } = match;
     
@@ -18,5 +20,3 @@ function Users({ match }) {
         </div>
     );
 }
-
-export { Users };

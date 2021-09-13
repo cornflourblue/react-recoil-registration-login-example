@@ -5,6 +5,8 @@ import { useRecoilValue } from 'recoil';
 import { authAtom } from '_state';
 import { Login, Register } from './';
 
+export { Account };
+
 function Account({ history, match }) {
     const auth = useRecoilValue(authAtom);
     const { path } = match;
@@ -29,5 +31,3 @@ function Account({ history, match }) {
         </div>
     );
 }
-
-export { Account };

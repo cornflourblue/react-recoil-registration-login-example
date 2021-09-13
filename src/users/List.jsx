@@ -5,6 +5,8 @@ import { useRecoilValue } from 'recoil';
 import { usersAtom } from '_state';
 import { useUserActions } from '_actions';
 
+export { List };
+
 function List({ match }) {
     const { path } = match;
     const users = useRecoilValue(usersAtom);
@@ -60,5 +62,3 @@ function List({ match }) {
         </div>
     );
 }
-
-export { List };
