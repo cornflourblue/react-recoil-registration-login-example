@@ -83,9 +83,6 @@ function fakeBackend() {
                     delete params.password;
                 }
     
-                console.log('@@@ updateUser id', idFromUrl());
-                console.log('@@@ updateUser params', params);
-
                 // update and save user
                 Object.assign(user, params);
                 localStorage.setItem(usersKey, JSON.stringify(users));

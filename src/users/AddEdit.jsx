@@ -71,7 +71,6 @@ function AddEdit({ history, match }) {
     }
 
     function updateUser(id, data) {
-        console.log('@@@ AddEdit updateUser data', data);
         return userActions.update(id, data)
             .then(() => {
                 history.push('/users');

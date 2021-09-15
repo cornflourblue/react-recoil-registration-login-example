@@ -13,7 +13,10 @@ function Alert() {
 
     useEffect(() => {
         // clear alert on location change
-        history.listen(alertActions.clear);
+        const unlisten = history.listen(alertActions.clear);
+
+        // stop the listener when component unmounts
+        return unlisten;
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
